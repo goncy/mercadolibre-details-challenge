@@ -32,7 +32,7 @@ export default extendTheme({
   },
   sizes: {
     container: {
-      xl: "1265px",
+      xl: "1200px",
     },
   },
   fonts: {

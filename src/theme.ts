@@ -10,4 +10,8 @@ export default extendTheme({
       xl: "1265px",
     },
   },
+  fonts: {
+    body: "Proxima Nova",
+    heading: "Proxima Nova",
+  },
 });

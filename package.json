@@ -1,0 +1,42 @@
+{
+  "name": "mercadolibre-detail-clone",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview",
+    "theme": "chakra-cli tokens ./src/theme.ts"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^1.5.2",
+    "@emotion/react": "^11.1.5",
+    "@emotion/styled": "^11.3.0",
+    "framer-motion": "^4.1.8",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "react-icons": "^4.2.0",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "@chakra-ui/cli": "^1.3.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/react-router-dom": "^5.1.7",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "@vitejs/plugin-react-refresh": "^1.3.1",
+    "eslint": "^7.24.0",
+    "eslint-config-prettier": "^8.2.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-cypress": "^2.11.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.2.1",
+    "typescript": "^4.1.2",
+    "vite": "^2.1.5"
+  }
+}

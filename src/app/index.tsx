@@ -5,7 +5,7 @@ import Routes from "./routes";
 
 const App: React.FC = () => {
   return (
-    <Container alignSelf="center" height="100%" maxWidth="container.xl" paddingX={0}>
+    <Container alignSelf="center" maxWidth="container.xl" paddingX={0}>
       <Stack>
         <Box>{`< Navbar />`}</Box>
         <Box>

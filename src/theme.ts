@@ -36,7 +36,7 @@ export default extendTheme({
     Input: {
       parts: ["field"],
       defaultProps: {
-        focusBorderColor: "none",
+        focusBorderColor: "secondary.500",
       },
       variants: {
         filled: {
@@ -47,6 +47,11 @@ export default extendTheme({
             ":hover, :focus": {
               backgroundColor: "white",
             },
+          },
+        },
+        outline: {
+          field: {
+            borderColor: "gray.300",
           },
         },
       },

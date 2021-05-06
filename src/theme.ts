@@ -14,7 +14,11 @@ export default extendTheme({
       800: "#BFB543",
       900: "#BFB543",
     },
-    secondary: theme.colors.messenger,
+    secondary: {
+      ...theme.colors.messenger,
+      100: theme.colors.messenger[50],
+      50: `rgba(65,137,230,.15)`,
+    },
   },
   sizes: {
     container: {
@@ -31,6 +35,14 @@ export default extendTheme({
         lg: {
           fontSize: "md",
         },
+      },
+      variants: {
+        ghost: (props) => ({
+          backgroundColor: `${props.colorScheme}.50`,
+          ":hover, :focus": {
+            backgroundColor: `${props.colorScheme}.100`,
+          },
+        }),
       },
     },
     Input: {

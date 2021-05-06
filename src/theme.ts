@@ -1,6 +1,13 @@
 import {extendTheme, theme} from "@chakra-ui/react";
 
 export default extendTheme({
+  styles: {
+    global: {
+      body: {
+        color: "blackAlpha.900",
+      },
+    },
+  },
   colors: {
     primary: {
       50: "#FFF9BD",

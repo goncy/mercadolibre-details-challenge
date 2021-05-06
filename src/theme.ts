@@ -19,6 +19,9 @@ export default extendTheme({
       100: theme.colors.messenger[50],
       50: `rgba(65,137,230,.15)`,
     },
+    success: theme.colors.whatsapp,
+    error: theme.colors.red,
+    warning: theme.colors.orange,
   },
   sizes: {
     container: {
@@ -30,6 +33,20 @@ export default extendTheme({
     heading: "Proxima Nova",
   },
   components: {
+    Link: {
+      variants: {
+        color: ({colorScheme = "secondary"}) => ({
+          color: `${colorScheme}.500`,
+          _hover: {
+            color: `${colorScheme}.600`,
+            textDecoration: "none",
+          },
+        }),
+      },
+      defaultProps: {
+        variant: "color",
+      },
+    },
     Button: {
       sizes: {
         lg: {
@@ -37,10 +54,10 @@ export default extendTheme({
         },
       },
       variants: {
-        ghost: (props) => ({
-          backgroundColor: `${props.colorScheme}.50`,
+        ghost: ({colorScheme = "secondary"}) => ({
+          backgroundColor: `${colorScheme}.50`,
           ":hover, :focus": {
-            backgroundColor: `${props.colorScheme}.100`,
+            backgroundColor: `${colorScheme}.100`,
           },
         }),
       },

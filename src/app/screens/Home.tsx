@@ -1,12 +1,12 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import {Link, Text} from "@chakra-ui/react";
 
 const HomeScreen: React.FC = () => {
   return (
     <div>
-      {`<HomeScreen />`}
+      <Text>{`<HomeScreen />`}</Text>
       <br />
-      <Link to="/productId">Ver página de detalle de producto</Link>
+      <Link href="/productId">Ver página de detalle de producto</Link>
     </div>
   );
 };

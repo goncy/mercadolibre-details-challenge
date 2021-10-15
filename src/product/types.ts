@@ -3,6 +3,13 @@ interface ProductPicture extends Record<string, any> {
   url: string;
 }
 
+interface ProductAttributes extends Record<string, any> {
+  id: string;
+  name: string;
+  value_name: string;
+  value_id: any;
+}
+
 export interface Product extends Record<string, any> {
   id: string;
   title: string;
@@ -11,4 +18,5 @@ export interface Product extends Record<string, any> {
   sold_quantity: number;
   condition: string;
   pictures: ProductPicture[];
+  attributes: ProductAttributes[];
 }

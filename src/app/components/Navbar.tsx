@@ -4,8 +4,8 @@ import {IoIosSearch} from "react-icons/io";
 import {IoLocationOutline} from "react-icons/io5";
 import {BsCart2} from "react-icons/bs";
 
-import logo from "../assets/logo.png";
-import beneficts from "../assets/beneficts.webp";
+import beneficts from "../../assets/beneficts.webp";
+import logo from "../../assets/logo.png";
 
 const Navbar: React.FC = () => (
   <>

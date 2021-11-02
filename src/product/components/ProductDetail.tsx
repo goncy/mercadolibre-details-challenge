@@ -32,7 +32,7 @@ const ProductDetail: React.FC<Props> = ({product = mock.product}) => {
 
   return (
     <>
-      <Stack border="1px solid rgba(0,0,0,.1);" borderRadius="md" h="fit-content" p={4} w="350px">
+      <Stack border="1px solid rgba(0,0,0,.1);" borderRadius="md" h="fit-content" p={4}>
         <Stack
           align="center"
           color="rgba(0,0,0,.55)"
@@ -85,7 +85,7 @@ const ProductDetail: React.FC<Props> = ({product = mock.product}) => {
             </Link>
           </Stack>
           <Stack direction="row">
-            <Image display="block" margin="auto" pr={1} src={IconReturn} />
+            <Image pr={1} src={IconReturn} />
             <Text color="#00a650">Devolución gratis</Text>
           </Stack>
           <Stack pl="26px" spacing="0">

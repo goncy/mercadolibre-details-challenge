@@ -10,6 +10,10 @@ interface ProductAttributes extends Record<string, any> {
   value_id: any;
 }
 
+export interface Question extends Record<string, any> {
+  content: string;
+}
+
 export interface Product extends Record<string, any> {
   id: string;
   title: string;
@@ -19,4 +23,5 @@ export interface Product extends Record<string, any> {
   condition: string;
   pictures: ProductPicture[];
   attributes: ProductAttributes[];
+  questions: Question[];
 }

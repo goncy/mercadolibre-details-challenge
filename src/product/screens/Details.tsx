@@ -7,6 +7,7 @@ import mock from "../mock";
 import ProductDetail from "../components/ProductDetail";
 import Gallery from "../components/Gallery";
 import Description from "../components/Description";
+import AboutSeller from "../components/AboutSeller";
 
 interface Props {
   product: Product;
@@ -70,7 +71,10 @@ const DetailsScreen: React.FC<Props> = ({product = mock.product}) => {
           <Gallery product={product} />
           <Description product={product} />
         </Stack>
-        <ProductDetail product={product} />
+        <Stack direction="column" spacing={4} w="350px">
+          <ProductDetail product={product} />
+          <AboutSeller product={product} />
+        </Stack>
       </Stack>
       <Stack
         align="center"

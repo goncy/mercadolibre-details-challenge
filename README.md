@@ -31,3 +31,6 @@ El resto de los elementos son opcionales pero altamente recomendados.
 ---
 
 No te quedes acá, el repositorio ya tiene el router configurado para agregar la pantalla de inicio, agregá todas las pantallas que quieras!
+
+## Disclaimer
+Intenten usar logos diferentes o en su defecto agregar un footer o header indicando que la web se trata de un challenge para evitar bans de servicios por phishing.

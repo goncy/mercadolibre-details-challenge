@@ -1,0 +1,29 @@
+.navbar {
+  background-color: #fff15a;
+  padding: 1rem 0.5rem;
+}
+
+.navbar__wrapper {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.navbar__first-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navbar__navbar-brand h1 {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.navbar__navbar-search {
+  width: 50%;
+}
+
+.navbar__search-input input { 
+  background-color: #fff;
+}

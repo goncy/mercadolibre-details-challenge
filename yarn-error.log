@@ -1,0 +1,79 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.22.11
+
+Node version: 
+  16.5.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/typescript/-/typescript-4.5.5.tgz: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141390:19)
+      at Object.onceWrapper (node:events:513:28)
+      at ClientRequest.emit (node:events:394:28)
+      at TLSSocket.emitRequestTimeout (node:_http_client:761:9)
+      at Object.onceWrapper (node:events:513:28)
+      at TLSSocket.emit (node:events:406:35)
+      at TLSSocket.Socket._onTimeout (node:net:486:8)
+      at listOnTimeout (node:internal/timers:557:17)
+      at processTimers (node:internal/timers:500:7)
+
+npm manifest: 
+  {
+    "name": "mercadolibre-details-clone",
+    "version": "0.0.0",
+    "scripts": {
+      "dev": "vite",
+      "build": "tsc && vite build",
+      "serve": "vite preview",
+      "theme": "chakra-cli tokens ./src/theme.ts"
+    },
+    "dependencies": {
+      "@chakra-ui/react": "^1.5.2",
+      "@emotion/react": "^11.1.5",
+      "@emotion/styled": "^11.3.0",
+      "firebase": "^8.10.0",
+      "framer-motion": "^4.1.8",
+      "nanoid": "^3.1.30",
+      "react": "^17.0.0",
+      "react-dom": "^17.0.0",
+      "react-icons": "^4.3.1",
+      "react-router-dom": "^5.2.0"
+    },
+    "devDependencies": {
+      "@chakra-ui/cli": "^1.3.0",
+      "@types/node": "^16.11.2",
+      "@types/react": "^17.0.0",
+      "@types/react-dom": "^17.0.0",
+      "@types/react-router-dom": "^5.1.7",
+      "@typescript-eslint/eslint-plugin": "^4.22.0",
+      "@typescript-eslint/parser": "^4.22.0",
+      "@vitejs/plugin-react-refresh": "^1.3.1",
+      "eslint": "^7.24.0",
+      "eslint-config-prettier": "^8.2.0",
+      "eslint-config-standard": "^16.0.2",
+      "eslint-plugin-cypress": "^2.11.2",
+      "eslint-plugin-import": "^2.22.1",
+      "eslint-plugin-node": "^11.1.0",
+      "eslint-plugin-prettier": "^3.4.0",
+      "eslint-plugin-promise": "^4.3.1",
+      "eslint-plugin-react": "^7.23.2",
+      "eslint-plugin-react-hooks": "^4.2.0",
+      "prettier": "^2.2.1",
+      "typescript": "^4.1.2",
+      "vite": "^2.1.5"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

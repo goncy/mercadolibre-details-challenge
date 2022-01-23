@@ -4,7 +4,7 @@ import {Text, Stack, Heading, Table, Tbody, Td, Th, Tr, StackDivider, Box} from 
 import {Product} from "../types";
 import mock from "../mock";
 
-import Questions from "./Questions";
+import ConsumerQuestions from "./ConsumerQuestions";
 interface Props {
   product: Product;
 }
@@ -117,7 +117,7 @@ const Description: React.FC<Props> = ({product = mock.product}) => {
           <br /> Descripción: 100cm de alto 70cm de ancho
         </Text>
       </Stack>
-      <Questions product={product} />
+      <ConsumerQuestions />
     </Stack>
   );
 };

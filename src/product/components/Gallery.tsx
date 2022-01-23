@@ -28,7 +28,7 @@ const Gallery: React.FC<Props> = ({product = mock.product}) => {
           />
         ))}
       </Stack>
-      <Flex minH="500px" pl={20} pt={12}>
+      <Flex align="center" justify="center" minH="500px" w="100%">
         {select && <Image bgSize="cover" maxH="500px" objectFit="contain" src={select} />}
       </Flex>
     </Stack>

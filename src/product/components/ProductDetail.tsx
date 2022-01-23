@@ -9,6 +9,7 @@ import {
   Stack,
   StackDivider,
   Text,
+  useToast,
 } from "@chakra-ui/react";
 import {FiHeart} from "react-icons/fi";
 
@@ -29,6 +30,8 @@ const ProductDetail: React.FC<Props> = ({product = mock.product}) => {
     currency: "ARS",
     minimumFractionDigits: 0,
   });
+
+  const toast = useToast();
 
   return (
     <>
@@ -121,7 +124,19 @@ const ProductDetail: React.FC<Props> = ({product = mock.product}) => {
             <Button colorScheme="messenger" size="lg" variant="solid">
               Comprar ahora
             </Button>
-            <Button colorScheme="blue" size="lg" variant="ghost">
+            <Button
+              colorScheme="blue"
+              size="lg"
+              variant="ghost"
+              onClick={() =>
+                toast({
+                  title: "Agregaste a tu carrito 1 producto.",
+                  variant: "subtle",
+                  isClosable: true,
+                  duration: 2000,
+                })
+              }
+            >
               Agregar al carrito
             </Button>
           </Stack>
